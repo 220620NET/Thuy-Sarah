@@ -10,15 +10,20 @@ public class Program
 		string input = Console.ReadLine();
 		int user = int.Parse(input);
 	for(int i = 0; i < user; i++)
-	if (i % 3 == 0)
+	
+	if (i % 3 == 0 && i % 5 == 0)
+	{
+		Console.WriteLine("FizzBuzz");
+	}
+	else if (i % 3 == 0)
 		{
 			Console.WriteLine("fizz");
 	}
-		else if (i % 5 == 0)
+	else if (i % 5 == 0)
 		{
 			Console.WriteLine("buzz");
 	}
-		else {
+	else {
 			Console.WriteLine(i);
 		}
 	}
